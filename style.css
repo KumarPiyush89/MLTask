@@ -1,0 +1,306 @@
+.navbar {
+  transition: background-color 0.3s ease;
+}
+/* Ensure navbar has a defined height */
+.navbar {
+  height: 60px; /* Adjust based on your actual navbar height */
+  position: fixed; /* Keep the navbar fixed at the top */
+  width: 100%; /* Full width */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure navbar is above other content */
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex; /* Use flexbox to center content vertically */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  min-height: calc(100vh - 60px); /* Full viewport height minus navbar height */
+  padding-top: 60px; /* Ensure content starts below navbar */
+  overflow: hidden; /* Prevent scrolling if the image overflows */
+ /* Optional: background color if image does not cover fully */
+ 
+}
+
+/* Ensure the hero image covers the section without distortion */
+#heroimg {
+  max-height: 100%; /* Prevent the image from being taller than the container */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container while preserving aspect ratio */
+}
+
+/* Adjust hero text and buttons for centering and responsiveness */
+.hero-text {
+  max-width: 500px;
+  text-align: center;
+  color: black; /* Assuming text should be white on a dark background */
+}
+
+.hero-title {
+  font-weight: bold;
+  font-size: 3rem; /* Adjust size as needed */
+}
+
+.hero-subtitle {
+  color: #f67a32;
+  font-weight: bold;
+  font-size: 2rem; /* Adjust size as needed */
+}
+
+.hero-buttons .btn {
+  margin-right: 10px;
+  font-size: 1rem; /* Adjust size as needed */
+}
+
+/* Optional: Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .hero-buttons .btn {
+    font-size: 0.875rem;
+  }
+}
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 60px); /* Full viewport height minus navbar height */
+  padding-top: 60px; /* Ensure content starts below navbar */
+  overflow: hidden;
+  
+}
+
+/* Image with curved sides */
+#heroimg {
+  border-radius: 0 100px 100px 0; /* Adjust these values to control the curve */
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+/* Ensure the image container maintains the layout */
+.col-md-6.text-center {
+  overflow: hidden; /* Ensure the image doesn't overflow the container */
+}
+
+
+
+       .testimonial-section {
+      text-align: center;
+      padding: 50px 0;
+    }
+    .carousel-item img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .carousel-item p {
+      font-style: italic;
+      color: #777;
+    }
+    .carousel-item h5 {
+      font-weight: bold;
+      color: #28a745;
+    }
+
+    .contact-section {
+      padding: 50px 0;
+    }
+    .contact-image {
+      width: 100%;
+      max-width: 500px;
+      max-height: 800px;
+    }
+
+
+
+    
+
+    .custom-shape {
+      width: 100%;
+      max-width: 300px;
+      background: #6c63ff;
+      border-radius: 10%;
+      overflow: hidden;
+      height: auto;
+    }
+    
+    .content-wrapper {
+      display: flex;
+      align-items: center;
+    }
+    .card-img-top {
+      width: 100%; /* Full width */
+      height: 200px; /* Fixed height */
+      object-fit: cover; /* Cover the entire area without stretching */
+    }
+
+
+
+/* Products Section */
+#products {
+  padding: 20px 0; /* Adjust padding as needed */
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+/* Optional: Card Image Styling */
+.card-img-top {
+  transition: opacity 0.3s ease; /* Smooth transition for image opacity */
+}
+
+.card:hover .card-img-top {
+  opacity: 0.8; /* Slightly fade the image on hover */
+}
+
+
+
+    /*Start Footer*/
+footer {
+  background-color: #121212;
+  padding: 60px 20px;
+  text-align: center;
+}
+footer .text {
+  max-width: 500px;
+  margin: auto;
+}
+footer .text h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 19px;
+  letter-spacing: 1.9px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+footer .text .fa-asterisk {
+  font-size: 12px;
+  color: #a96700;
+}
+footer .text p {
+  line-height: 27px;
+  color: #fff;
+}
+footer .contact-container {
+  padding: 40px 0;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+footer .contact-container h3 {
+  font-size: 19px;
+  letter-spacing: 1.9px;
+  color: #fff;
+}
+footer .social-media .links a {
+  margin: 0 10px;
+  font-size: 25px;
+  color: #fff;
+  transition: color 0.3s;
+}
+footer .social-media .links a:hover {
+  color: #a96700;
+}
+footer .newsletter input {
+  padding: 10px;
+  width: 270px;
+  background-color: #eee;
+  border: none;
+  margin-left: -15px;
+}
+footer .newsletter i {
+  margin-left: -40px;
+  vertical-align: middle;
+  font-size: 21px;
+  color: #a96700;
+}
+
+
+/* Center the copyright content */
+.copyright {
+  padding: 15px 40px 30px;
+  background-color: #262526;
+  text-align: center;
+  color: #919191;
+  position: relative; /* For positioning the arrow */
+}
+.copyright .svg-up {
+  top: 0;
+  left: 50%;
+  margin-left: -96px;
+  margin-top: -50px;
+}
+/* Style for the up arrow */
+.copyright .arrow-up-link {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 100px; /* Adjust based on your design */
+  left: 47%;
+  top: -10%;
+  transform: translateX(-50%);
+  text-decoration: none;
+}
+
+.copyright .arrow-up {
+  width: 40px;
+  height: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px; /* Adjust as needed */
+}
+
+.copyright ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.copyright li {
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.copyright li:not(:last-of-type):after {
+  content: '•';
+  margin: 0 10px;
+}
+
+.copyright .CTA {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright .CTA li a {
+  color: #919191;
+  transition: color 0.3s;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
